@@ -19,13 +19,15 @@
             </table>
         </td>
     </tr>
-    {if $barcode_url}
-        <tr style="margin-top: 10px">
-           <td style="width: 70%"></td>
-            <td style="width: 30%; text-align: right;">
-                <img src="{$barcode_url}" />
-            </td>
-        </tr>
-    {/if}
 </table>
 
+{if $barcode_url}
+<table style="100%; padding-top: 10px">
+    <tr style="margin-top: 10px">
+        <td style="width: 70%"></td>
+        <td style="width: 30%; text-align: right;">
+            <img src="{$barcode_url}" />
+        </td>
+    </tr>
+</table>
+{/if}

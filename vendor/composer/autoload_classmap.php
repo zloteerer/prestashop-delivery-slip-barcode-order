@@ -7,7 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
-    'PrestaShop\\Module\\DemoSymfonyFormSimple\\Controller\\DemoConfigurationController' => $baseDir . '/src/Controller/DemoConfigurationController.php',
-    'PsBarcodeDelivery' => $baseDir . '/psbarcodedelivery.php',
-    'PsBarcodeDeliveryGenerator' => $baseDir . '/src/PsBarcodeDeliveryGenerator.php',
+    'DeliverySlip_OrderBarcode' => $baseDir . '/deliveryslip_orderbarcode.php',
+    'OrderBarcodeGenerator' => $baseDir . '/src/classes/OrderBarcodeGenerator.php',
 );

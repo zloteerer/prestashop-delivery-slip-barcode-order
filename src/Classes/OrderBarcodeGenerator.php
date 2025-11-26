@@ -2,7 +2,7 @@
 
 use TCPDFBarcode;
 
-class BarcodeGenerator
+class OrderBarcodeGenerator
 {
     /**
      * Generate a barcode PNG file in img/tmp and return the filename (not full path).

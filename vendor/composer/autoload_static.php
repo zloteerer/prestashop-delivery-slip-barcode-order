@@ -8,9 +8,8 @@ class ComposerStaticInit68656533bf9dc7fbb70644aede914791
 {
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'PrestaShop\\Module\\DemoSymfonyFormSimple\\Controller\\DemoConfigurationController' => __DIR__ . '/../..' . '/src/Controller/DemoConfigurationController.php',
-        'PsBarcodeDelivery' => __DIR__ . '/../..' . '/psbarcodedelivery.php',
-        'PsBarcodeDeliveryGenerator' => __DIR__ . '/../..' . '/src/PsBarcodeDeliveryGenerator.php',
+        'DeliverySlip_OrderBarcode' => __DIR__ . '/../..' . '/deliveryslip_orderbarcode.php',
+        'OrderBarcodeGenerator' => __DIR__ . '/../..' . '/src/classes/OrderBarcodeGenerator.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

@@ -1,12 +1,12 @@
 {
-    "name": "zloteerer/deliveryslip_barcodeorder",
+    "name": "zloteerer/deliveryslip_orderbarcode",
     "description": "Order Barcode Delivery Slip",
     "version": "1.0.0",
     "license": "AFL-3.0",
     "author": "zloteerer",
     "autoload": {
         "classmap": [
-            "deliveryslip_barcodeorder.php",
+            "deliveryslip_orderbarcode.php",
             "src/"
         ]
     },
