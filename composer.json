@@ -1,0 +1,21 @@
+{
+    "name": "zloteerer/deliveryslip_barcodeorder",
+    "description": "Order Barcode Delivery Slip",
+    "version": "1.0.0",
+    "license": "AFL-3.0",
+    "author": "zloteerer",
+    "autoload": {
+        "classmap": [
+            "deliveryslip_barcodeorder.php",
+            "src/"
+        ]
+    },
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "prepend-autoloader": false
+    },
+    "type": "prestashop-module"
+}
