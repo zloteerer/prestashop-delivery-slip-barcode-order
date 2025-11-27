@@ -32,6 +32,13 @@ class DeliverySlip_OrderBarcode extends Module
             && $this->installTemplate();
     }
 
+    public function uninstall()
+    {
+        return parent::uninstall()
+            && $this->unregisterHook('displayPDFDeliverySlip')
+            && $this->uninstallTemplate();
+    }
+
     /**
      * Hook called just before rendering the delivery slip PDF
      */
