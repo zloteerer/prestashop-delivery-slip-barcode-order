@@ -16,18 +16,20 @@
                 <tr>
                     <td style="font-size: 14pt; color: #9E9F9E">{$title|escape:'html':'UTF-8'}</td>
                 </tr>
+                {if $barcode_url}
+                    <tr>
+                        <table style="100%; padding-top: 10px">
+                            <tr>
+                                <td style="width: 50%"></td>
+                                <td style="width: 50%; text-align: right;">
+                                    <img src="{$barcode_url}" />
+                                </td>
+                            </tr>
+                        </table>
+                    </tr>
+                {/if}
             </table>
         </td>
     </tr>
 </table>
 
-{if $barcode_url}
-<table style="100%; padding-top: 10px">
-    <tr style="margin-top: 10px">
-        <td style="width: 70%"></td>
-        <td style="width: 30%; text-align: right;">
-            <img src="{$barcode_url}" />
-        </td>
-    </tr>
-</table>
-{/if}
