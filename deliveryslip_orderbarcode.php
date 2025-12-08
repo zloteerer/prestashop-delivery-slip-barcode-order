@@ -64,7 +64,10 @@ class DeliverySlip_OrderBarcode extends Module
 
         if ($barcodeFilename) {
             $barcodeUrl = _PS_BASE_URL_SSL_ . __PS_BASE_URI__ . 'img/tmp/' . $barcodeFilename;
-            $smarty->assign(['barcode_url' => $barcodeUrl]);
+            $smarty->assign([
+                'barcode_url' => $barcodeUrl,
+                'barcode_code' => $reference
+            ]);
         }
     }
 

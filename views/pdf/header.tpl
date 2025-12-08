@@ -16,13 +16,14 @@
                 <tr>
                     <td style="font-size: 14pt; color: #9E9F9E">{$title|escape:'html':'UTF-8'}</td>
                 </tr>
-                {if $barcode_url}
+                {if $barcode_url && $barcode_code}
                     <tr>
                         <table style="100%; padding-top: 10px">
                             <tr>
                                 <td style="width: 50%"></td>
-                                <td style="width: 50%; text-align: right;">
+                                <td style="vertical-align:top; width: 50%; text-align: center;">
                                     <img src="{$barcode_url}" />
+                                    {$barcode_code}
                                 </td>
                             </tr>
                         </table>
